@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int arthur;
+    int anthony;
+    int soma;
+    int multiplicacao;
+    int divisao;
+    int subtracao;
+    int raiz;
+    
+    
+    anthony = 66;
+    arthur = -55;
+    soma = anthony+arthur;
+    multiplicacao = arthur*anthony;
+    divisao = arthur/anthony;
+   subtracao = anthony-arthur; 
+    raiz = arthur^anthony;
+
+    printf("o valor de arthur é %d \n", arthur);
+    printf("e o valor de anthony é %d \n", anthony);
+    printf("e a soma é %d \n", soma);
+    printf("e a multiplicação é %d \n", multiplicacao);
+    printf("e a divisao deles é %d \n", divisao);
+    printf("e a subtração deles é %d \n", subtracao);
+    printf("e a raiz deles é %d", raiz);
+    
+    return 0;
+    
+    
+}
