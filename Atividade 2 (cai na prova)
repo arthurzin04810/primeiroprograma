@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+int main() {
+int numero= 1;
+int chute;
+printf("digite um número: ");
+scanf("%d", &chute);
+
+if(chute == numero){
+printf("acertou! \n");
+}else{
+    printf("errou! \n");
+}
+printf("o número era %d", numero);
+
+
+    return 0;
+    
+}
