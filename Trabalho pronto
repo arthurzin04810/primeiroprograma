@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+    int qualveiculo;
+    float valorpago;
+    float troco;
+    
+    printf("qual é o seu tipo de veículo?\n");    
+    printf("1-Moto (R$5)\n");   
+    printf("2-Carro (R$10)\n");
+    printf("3-Caminhão(R$20)\n");    
+    printf("4-Onibus (R$30)\n");       
+    printf("qual é o veículo?\n");
+    scanf("%d", &qualveiculo);
+    if(qualveiculo>4){
+        printf("seu veículo não está na lista, programa encerrado.\n");
+        return -1;
+       
+    }
+
+
+    printf("Com qual valor você vai pagar?\n");
+    scanf("%f", &valorpago);
+    
+    
+    
+    if(qualveiculo==1){
+        troco=valorpago-5;
+    }else if(qualveiculo==2){
+        troco=valorpago-10;
+    }else if(qualveiculo==3){
+        troco=valorpago-20;
+    }else if(qualveiculo==4){ 
+        troco=valorpago-30; 
+    }else{
+        if(qualveiculo);
+    } 
+      if(troco<0){ 
+    printf("tá lizo? Tá faltando dinheiro.");
+    return -1;}
+    
+    printf("o troco foi %.2f",troco);
+    
+   
+    
+    
+    
+    
+    
+     
+    return 0;
+}
+
