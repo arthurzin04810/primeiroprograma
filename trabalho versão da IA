@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+  int tipoVeiculo;
+  float valorPedagio = 0;
+  float valorPago;
+  float troco;
+
+  printf("Selecione o tipo de veículo:\n");
+  printf("1 - Carro (R$10)\n");
+  printf("2 - Moto (R$5)\n");
+  printf("3 - Caminhão (R$20)\n");
+  printf("4 - Ônibus (R$30)\n");
+  printf("Digite o número correspondente ao veículo: ");
+  scanf("%d", &tipoVeiculo);
+
+  if (tipoVeiculo == 1) {
+    valorPedagio = 10.0;
+  } else if (tipoVeiculo == 2) {
+    valorPedagio = 5.0;
+  } else if (tipoVeiculo == 3) {
+    valorPedagio = 20.0;
+  } else if (tipoVeiculo == 4) {
+    valorPedagio = 30.0;
+  } else {
+    printf("Veículo não reconhecido. Não é permitido passar pelo pedágio.\n");
+    return 1; // Indica que o programa terminou com um erro
+  }
+
+  printf("O valor do pedágio é: R$%.2f\n", valorPedagio);
+  printf("Insira o valor pago pelo motorista: R$");
+  scanf("%f", &valorPago);
+
+  if (valorPago >= valorPedagio) {
+    troco = valorPago - valorPedagio;
+    printf("Pagamento efetuado com sucesso!\n");
+    printf("Seu troco é: R$%.2f\n", troco);
+  } else {
+    printf("Valor insuficiente. O pagamento não foi efetuado.\n");
+  }
+
+  return 0; // Indica que o programa terminou com sucesso
+}
